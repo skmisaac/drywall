@@ -1,7 +1,7 @@
 'use strict';
 
 //dependencies
-var config = require('config'),
+var config = require('./config'),
     express = require('express'),
     mongoStore = require('connect-mongo')(express),
     http = require('http'),

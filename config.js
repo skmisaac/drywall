@@ -32,15 +32,15 @@ exports.oauth = {
     secret: process.env.TWITTER_OAUTH_SECRET || ''
   },
   facebook: {
-    key: process.env.FACEBOOK_OAUTH_KEY || '',
-    secret: process.env.FACEBOOK_OAUTH_SECRET || ''
+    key: process.env.FACEBOOK_OAUTH_KEY || '1408445292761098',
+    secret: process.env.FACEBOOK_OAUTH_SECRET || '9d7324e1c948c80b1c8757e1e9c10f66'
   },
   github: {
-    key: process.env.GITHUB_OAUTH_KEY || '',
-    secret: process.env.GITHUB_OAUTH_SECRET || ''
+    key: process.env.GITHUB_OAUTH_KEY || '4c4d4a90ef810bcb24bf',
+    secret: process.env.GITHUB_OAUTH_SECRET || '6a12deaaa4c6630f0aa1497f5bbc323b912de547'
   },
   google: {
-    key: process.env.GOOGLE_OAUTH_KEY || '',
-    secret: process.env.GOOGLE_OAUTH_SECRET || ''
+    key: process.env.GOOGLE_OAUTH_KEY || '86221171266-phimn6bv0j65mt5tega1oou7v52iopk0.apps.googleusercontent.com',
+    secret: process.env.GOOGLE_OAUTH_SECRET || '9DO3X9EVrpTNJ887MAtAqcAg'
   }
 };
