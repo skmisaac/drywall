@@ -8,7 +8,8 @@ var config = require('./config'),
     path = require('path'),
     passport = require('passport'),
     mongoose = require('mongoose'),
-    helmet = require('helmet');
+    helmet = require('helmet'),
+    ludo = require('./game/app');
 
 //create express app
 var app = express();
@@ -68,6 +69,7 @@ app.configure(function(){
   app.set('google-oauth-secret', config.oauth.google.secret);
 
   //middleware
+  app.use(ludo);
   app.use(express.logger('dev'));
   app.use(express.compress());
   app.use(express.favicon(__dirname + '/public/favicon.ico'));
@@ -125,4 +127,5 @@ app.utility.workflow = require('drywall-workflow');
 //listen up
 app.server.listen(app.get('port'), function(){
   //and... we're live
+  console.log('Listening to port ' + app.get('port'));
 });
